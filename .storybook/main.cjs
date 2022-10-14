@@ -13,7 +13,14 @@ module.exports = {
   "core": {
     "builder": "@storybook/builder-vite"
   },
+
+  //Onde o storybook deve procurar por diretorios estáticos config do msw
+  "staticDirs":[
+    "../public"
+  ],
+  
   "features": {
-    "storyStoreV7": true
+    "storyStoreV7": true,
+    "interactionsDebugger": true
   }
 }
